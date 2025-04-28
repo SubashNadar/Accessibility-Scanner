@@ -1,6 +1,6 @@
 # [Your Extension Name] - AI-Powered Accessibility Scanner
 
-![AI/Robot assisting with accessibility scanning](https://via.placeholder.com/600x200.png?text=Replace+this+with+your+AI/Robot+Image)
+![AI/Robot assisting with accessibility scanning](https://imgs.search.brave.com/03H_FrMTXV6Z4anOES3P8WTulnDxCx5poUiQHtBo1Ik/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzQxLzI4LzUy/LzM2MF9GXzU0MTI4/NTIwN19teFZGdGpz/U0FUTldZUFZwOFgz/TWRZNGd4dTNlWHcz/TS5qcGc)
 <!-- TODO: Replace the placeholder image URL above with a real one -->
 
 A Chrome extension leveraging AI [or specify the service, e.g., Your AI Service Name] to help developers and testers identify web accessibility issues. It requires an API token for analysis and provides results in a downloadable file.
