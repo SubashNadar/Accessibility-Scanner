@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cody Accessibility Check</title>
+    <style>
+      body {
+        width: 350px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px;
+        font-size: 14px;
+        background-color: #f5f7fa;
+        color: #333;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 20px;
+        text-align: center;
+        color: #2c3e50;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #3498db;
+      }
+      button {
+        padding: 8px 12px;
+        cursor: pointer;
+        margin-top: 5px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      button:disabled {
+        background-color: #95a5a6;
+        cursor: not-allowed;
+      }
+      input[type="password"],
+      input[type="text"] {
+        width: calc(100% - 12px);
+        padding: 8px;
+        margin-bottom: 5px;
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+      }
+      input[type="password"]:focus,
+      input[type="text"]:focus {
+        border-color: #3498db;
+        outline: none;
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #2c3e50;
+      }
+      #apiKeySection,
+      #analysisSection {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        background-color: white;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      #analysisSection {
+        border-bottom: none;
+      }
+      #results {
+        margin-top: 10px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 12px;
+        background-color: #f9f9f9;
+        min-height: 50px;
+        font-size: 13px;
+        border-radius: 4px;
+        line-height: 1.4;
+      }
+      #keyStatus {
+        margin-top: 8px;
+        font-style: italic;
+        color: #7f8c8d;
+        font-size: 13px;
+        min-height: 1.2em;
+        font-weight: normal;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      .error-status {
+        color: #e74c3c !important;
+        font-weight: bold;
+        background-color: rgba(231, 76, 60, 0.1);
+        padding: 5px !important;
+      }
+      .success-status {
+        color: #27ae60;
+        font-weight: bold;
+        background-color: rgba(39, 174, 96, 0.1);
+        padding: 5px;
+      }
+      .key-visibility-toggle {
+        font-size: 12px;
+        margin-left: 5px;
+        cursor: pointer;
+        color: #3498db;
+        text-decoration: none;
+        background-color: #ecf0f1;
+        padding: 3px 6px;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+      }
+      .key-visibility-toggle:hover {
+        background-color: #d6e0e4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Accessibility Analysis</h1>
+
+    <!-- API Key Section -->
+    <div id="apiKeySection">
+      <label for="apiKey">Cody Access Token:</label>
+      <div style="display: flex; align-items: center">
+        <input type="password" id="apiKey" placeholder="Enter your token" />
+      </div>
+      <button id="saveKeyBtn">Save Token</button>
+      <div id="keyStatus">Checking token status...</div>
+    </div>
+
+    <!-- Analysis Section -->
+    <div id="analysisSection">
+      <button id="analyzeBtn" disabled>Analyze Current Page</button>
+      <button id="downloadBtn" disabled style="display: none">
+        Download Report
+      </button>
+      <div id="results">Set your API Token above, then click Analyze.</div>
+    </div>
+
+    <!-- Link the JS file -->
+    <script src="popup.js"></script>
+  </body>
+</html>
