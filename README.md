@@ -2,7 +2,7 @@
 
 <img src="https://imgs.search.brave.com/03H_FrMTXV6Z4anOES3P8WTulnDxCx5poUiQHtBo1Ik/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzQxLzI4LzUy/LzM2MF9GXzU0MTI4/NTIwN19teFZGdGpz/U0FUTldZUFZwOFgz/TWRZNGd4dTNlWHcz/TS5qcGc"
      alt="AI Robot assisting with accessibility"
-     style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; display: block; margin-left: auto; margin-right: auto;">
+     style="width: 100px; height: 100px; border-radius: 50px; object-fit: cover; display: block; margin-left: auto; margin-right: auto;">
 <!-- TODO: Replace the placeholder image URL above with a real one -->
 
 A Chrome extension leveraging AI [or specify the service, e.g., Your AI Service Name] to help developers and testers identify web accessibility issues. It requires an API token for analysis and provides results in a downloadable file.
